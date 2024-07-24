@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shamik Dandekar's Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Dark Mode Styles */
+    .dark-mode {
+      background-color: #1a202c;
+      color: #fff;
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <header class="container mx-auto p-6 flex justify-between items-center">
@@ -15,7 +22,8 @@
       <h1 class="text-2xl font-bold">Shamik Dandekar's Projects</h1>
     </div>
     <nav class="space-x-6">
-      
+      <!-- Added Dark Mode Toggle Button -->
+      <button id="dark-mode-toggle" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Toggle Dark Mode</button>
     </nav>
   </header>
 
@@ -25,8 +33,7 @@
       <p class="mt-4 text-lg">
         858-705-0517 • iamshamikdandekar@gmail.com
       </p>
-      
-<img class="mx-auto mt-3 w-24 h-24 rounded-full" src="https://lh3.googleusercontent.com/d/11BRbOC0i9kuRtjBA-C5YXlLguBgtl2Fw" alt="Avatar">
+      <img class="mx-auto mt-3 w-24 h-24 rounded-full" src="https://lh3.googleusercontent.com/d/11BRbOC0i9kuRtjBA-C5YXlLguBgtl2Fw" alt="Avatar">
     </section>
 
     <section class="mt-20">
@@ -115,5 +122,12 @@
       </div>
     </section>
   </main>
+
+  <!-- Added Script for Dark Mode Toggle -->
+  <script>
+    document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
